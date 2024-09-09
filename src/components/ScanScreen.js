@@ -38,7 +38,7 @@ const CompareForm = () => {
     formData.append('pdfFile', files[0]);
 
     try {
-      const response = await axios.post('http://localhost:4000/compare', formData, {
+      const response = await axios.post('https://impulse-backend-7r9x.onrender.com/compare', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
